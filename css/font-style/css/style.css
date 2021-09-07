@@ -1,27 +1,41 @@
 @charset "utf-8";
 
 #font1 {
-    color: cyan;
-    font-size: 24px;
-    font-family: serif;
-    font-weight: bold;
+    color: red;
+    font-size: 2.0rem;
+    font-family: suns-serif;
+    font-weight: 1000;
+    text-align: center;
 
 }
 
 #font2 {
-    color: #00ffff;
-    font-size: 1.5rem;
+    color: orange;
+    font-size: 2.0rem;
     font-family: sans-serif;
-    font-weight: lighter;
+    font-weight: 1000;
     font-style: italic;
+    text-align: center;
 }
 
 #layout1 {
-    text-align: right;
-    line-height: 2em;
+    color: rgb(255, 238, 0);
+    font-size: 2.0rem;
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-style: italic;
+    text-align: center;
 }
 
 #layout2 {
+    color:rgb(51, 255, 0);
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 1000;
+    font-style: italic;
     text-align: center;
-    line-height: 160%;
+}
+
+body{
+
 }
