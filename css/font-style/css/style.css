@@ -36,6 +36,15 @@
     text-align: center;
 }
 
-body{
 
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./../image/cb002e6223a6451856c14d68ef7cae00_t.jpeg") ;
+
+}
+
+.image{
+    text-align: center;
 }
