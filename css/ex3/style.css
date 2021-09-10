@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+
+body{
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16px;
+}
+
+h1,h2{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+h2{
+    margin: 0.5em;
+    font-size: 1.2em;
+    border-bottom-style: double;
+    border-color: crimson;
+
+}
+
+p{
+    margin: 0.5em;
+    border-style: dashed;
+    border-color: rgb(230, 200, 206);
+    padding: 0.5em;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+article{
+    width: 50%;
+}
