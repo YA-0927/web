@@ -10,6 +10,10 @@ h1,h2{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+h1{
+
+}
+
 h2{
     margin: 0.5em;
     font-size: 1.2em;
@@ -27,5 +31,5 @@ p{
     text-decoration: underline;
 }
 article{
-    width: 50%;
+    display: inline-block;
 }
