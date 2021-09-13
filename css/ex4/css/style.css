@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+html{
+    font-size: 16px;
+
+}
+
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+.container{
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.inline-brock{
+    display:inline-block;
+    width: 24%;
+    /* 垂直位置揃え */
+    vertical-align: top;
+}
+
+.inline-brock>a{
+    /* ブロックをリンク領域にする */
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.2rem;
+}
+p{
+    line-height :1.6rem;
+}
+.mb-1rem{
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+/* flex アイテムの最小設定 */
+.item {
+    flex: auto;
+    width: 33%;
+}
