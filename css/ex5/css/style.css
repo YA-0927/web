@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+*, *::before, *::after {
+    box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body>main>.all>.left>img{
+    object-fit: cover;
+    width: 60%;
+    max-width: 60%;
+    height: 90%;
+}
+
+header{
+    font-family: 'Noto Serif JP', serif;
+    color: aliceblue;
+    background-color: rgb(55, 55, 66);
+    padding: 0%;
+    border: 0%;
+}
+
+body{
+    font-family: 'Noto Serif JP', serif;
+}
+
+.left{
+    background-color: black;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+
+}
+
+footer{
+    padding: 1.5rem;
+    border: 0%;
+    background-color: gold;
+}
+.all{
+    display: flex;
+}
