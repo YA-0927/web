@@ -1,18 +1,12 @@
 @charset "utf-8";
 
 *, *::before, *::after {
-    box;
+    box-sizing: border-box
 }
+
 
 html{
     font-size: 16px;
-}
-
-body>main>.all>.left>img{
-    object-fit: cover;
-    width: 60%;
-    max-width: 60%;
-    height: 90%;
 }
 
 header{
@@ -21,27 +15,35 @@ header{
     background-color: rgb(55, 55, 66);
     padding: 0%;
     border: 0%;
+    position: sticky;
 }
+
+
 
 body{
     font-family: 'Noto Serif JP', serif;
 }
 
-.left{
-    background-color: black;
-
-}
-
 h1,h2,h3,h4,h5,h6{
     font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 
+.left{
+    object-fit: cover;
+    max-height: 500px;
+}
+
+h1{
+    font-display: center;
 }
 
 footer{
-    padding: 1.5rem;
+    padding: 1.3rem;
     border: 0%;
     background-color: gold;
 }
 .all{
     display: flex;
+    object-fit: cover;
+    height: auto;
 }
