@@ -7,43 +7,102 @@
 
 html{
     font-size: 16px;
-}
-
-header{
-    font-family: 'Noto Serif JP', serif;
+    background-color: rgb(22, 22, 24);
     color: aliceblue;
-    background-color: rgb(55, 55, 66);
-    padding: 0%;
-    border: 0%;
-    position: sticky;
 }
-
-
 
 body{
     font-family: 'Noto Serif JP', serif;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+/* ヘッダー */
+header{
+    display: flex;
 }
 
-.left{
+ul{
+    display: flex;
+}
+
+li{
+    margin-left: 10px;
+}
+
+nav{
+    margin: auto 0 auto auto;
+}
+
+header>p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+}
+
+
+/* トップ画像 */
+img{
+    width: 100%;
+}
+
+.top-image img{
+    width: 100%;
+    max-width: 1920px;
+    height: 300px;
     object-fit: cover;
-    max-height: 500px;
+}
+
+/* メイン */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 100;
+}
+article{
+    margin-bottom: 1.5rem;
 }
 
 h1{
-    font-display: center;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin: 1.5rem;
+    }
+
+h2{
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    margin-left: 0.5rem;
+}
+
+p{
+    margin-bottom: 1.8rem;
+    margin-left: 1.1rem;
+}
+
+.main{
+    margin-left: 10%;
+    padding-right: 10%;
 }
 
 footer{
-    padding: 1.3rem;
-    border: 0%;
-    background-color: gold;
+    text-align: center;
 }
-.all{
-    display: flex;
+
+.phot>a>img{
+    width: 200px;
+    height: 200px;
     object-fit: cover;
-    height: auto;
+    border-radius: 100%;
+}
+
+.phot{
+    padding-left: auto;
+    padding-right: auto;
 }
