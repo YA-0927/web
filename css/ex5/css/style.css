@@ -73,6 +73,11 @@ h1{
     margin: 1.5rem;
     }
 
+.hand{
+    float: right;
+    width: 400px;
+}
+
 h2{
     margin-bottom: 1.5rem;
 }
@@ -87,8 +92,8 @@ p{
 }
 
 .main{
-    margin-left: 10%;
-    padding-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 footer{
@@ -100,9 +105,9 @@ footer{
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
-}
+    /* 中央ぞろえ */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto
 
-.phot{
-    padding-left: auto;
-    padding-right: auto;
 }
