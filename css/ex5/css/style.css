@@ -90,7 +90,7 @@ h1{
 }
 
 .Profile{
-    min-width: 329px;
+    min-width: 320px;
 }
 
 h2{
@@ -138,5 +138,4 @@ footer{
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
-
 }
