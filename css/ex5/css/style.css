@@ -15,6 +15,11 @@ body{
     font-family: 'Noto Serif JP', serif;
 }
 
+.all{
+    width: auto;
+    min-width: 329px;
+}
+
 /* ヘッダー */
 header{
     display: flex;
@@ -73,9 +78,19 @@ h1{
     margin: 1.5rem;
     }
 
+
+.hand>img{
+    width: 150px;
+    margin-bottom: 1.2rem;
+}
+
 .hand{
-    float: right;
-    width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.Profile{
+    min-width: 329px;
 }
 
 h2{
@@ -105,9 +120,23 @@ footer{
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
-    /* 中央ぞろえ */
+    padding: 3px;
+}
+
+.phot{
+    max-width: 600px;
+    width: 100%;
     display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    /* 中央ぞろえ */
     margin-left: auto;
     margin-right: auto
+}
+
+.Profile-all{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
 
 }
