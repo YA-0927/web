@@ -19,6 +19,11 @@ html{
 
 body{
     font-family: 'Noto Serif JP', serif;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 2rem;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
 }
 
 .all{
@@ -30,7 +35,7 @@ body{
 header{
     display: flex;
     padding: 0.5rem;
-        background-color: black;
+    background-color: black;
 }
 
 a{
@@ -108,8 +113,13 @@ h1{
 
 
 .hand>img{
-    width: 150px;
-    margin-bottom: 1.2rem;
+    min-width: 150px;
+    max-width: 180px;
+}
+
+.hand>img:hover  {
+    min-width: 150px;
+    max-width: 180px;
 }
 
 .hand{
@@ -119,6 +129,7 @@ h1{
 
 .Profile{
     min-width: 320px;
+    max-width: 80%;
 }
 
 h2{
@@ -132,19 +143,22 @@ h3{
 p{
     margin-bottom: 1.8rem;
     margin-left: 1.1rem;
+    line-height: 1.5rem;
 }
 
 .main{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 footer{
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
     text-align: center;
     background-color: black;
     padding: 1rem;
-    position: relative;
-    width: auto;
+    width: 100%;
+
 }
 
 footer>p{
@@ -184,5 +198,7 @@ footer>p{
     text-align: center;
     font-weight: 900;
     font-size: 5rem;
-    padding: 6rem;
+    width: auto;
+    margin: auto;
+    line-height: normal;
 }
