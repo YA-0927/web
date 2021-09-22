@@ -112,12 +112,14 @@ h1{
     }
 
 
+
 .hand>img{
     min-width: 150px;
     max-width: 180px;
 }
 
-.hand>img:hover  {
+.hand>img:hover{
+    opacity: 1;
     min-width: 150px;
     max-width: 180px;
 }
@@ -125,6 +127,8 @@ h1{
 .hand{
     margin-top: auto;
     margin-bottom: auto;
+    display: block;
+    overflow: hidden;
 }
 
 .Profile{
