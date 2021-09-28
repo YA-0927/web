@@ -11,7 +11,7 @@ html{
     color: aliceblue;
 }
 
-
+/* 選択したときの色 */
 ::selection {
     background: orange;
     color: #fff;
@@ -20,16 +20,18 @@ html{
 body{
     font-family: 'Hina Mincho', serif;
     font-weight: 100;
-    height: 100%;
+    /* 「ヘッダー 一番下」で検索して一番上に出てきたサイトをコピペ */
     min-height: 100vh;
     position: relative;/*←相対位置*/
     padding-bottom: 2rem;/*←footerの高さ*/
     box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+    min-width: 320px; /* ←ブラウザ最小幅 */
 }
+
 
 .all{
     width: auto;
-    min-width: 329px;
+    height: 100%;
 }
 
 /* ヘッダー */
@@ -49,8 +51,7 @@ img{
     max-width: 1920px;
     height: 300px;
     object-fit: cover;
-    vertical-align: top;
-
+    vertical-align: top;/* ←隙間が空いたので修正（Slackのリンク参照） */
 }
 
 /* 案内 */
@@ -77,8 +78,7 @@ ul{
 nav>ul>li{
     display:inline-block;
     width: 100%;
-    /* 垂直位置揃え */
-    vertical-align: top;
+    /* 囲み線 */
     border: solid;
     border-width: 1px;
     border-color:rgb(36, 36, 36);
@@ -92,7 +92,7 @@ nav>ul>li>a{
 }
 
 nav>ul>li>a:hover  {
-background-color: orange;
+background-color: orange;/* ←マウスをホバーしたときにオレンジに変化 */
 }
 
 /* メイン */
@@ -116,11 +116,11 @@ h1{
     font-size: 2.5rem;
     /* 下線 */
     box-sizing: border-box;
-    width: 190px;
+    width: 150px;
     margin: 1.5rem auto 1.5rem auto;
     border-bottom:2px solid orange;
-    padding: bottom 3px;
-    line-height: 1.5;
+    padding: bottom 1px;
+    line-height: 1.;
     }
 
 .hand{
@@ -130,11 +130,10 @@ h1{
 .hand>a>img{
     min-width: 150px;
     max-width: 180px;
-    cursor: default;
+    cursor: default; /* カーソルをそのまま表示 */
 }
 
 .Profile{
-    min-width: 320px;
     max-width: 100%;
 
 }
@@ -155,10 +154,11 @@ p{
 
 .Profile-all{
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;/* 順番を反転させて表示 */
     justify-content: center;
     margin: auto;
 }
+
 
 .main{
     margin: 2rem auto 2rem auto;
@@ -180,16 +180,16 @@ footer{
 }
 
 footer>p{
-    margin: 0%;
+    margin: 0;
 
 }
 
 /* Photo */
-article>.phot>a>img{
+.phot>a>img{
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 100%;
+    border-radius: 25%;
     padding: 3px;
 }
 
@@ -200,8 +200,7 @@ article>.phot>a>img{
     flex-wrap:wrap ;
     justify-content: center;
     /* 中央ぞろえ */
-    margin-left: auto;
-    margin-right: auto
+    margin: 0 auto 0 auto;
 }
 
 
@@ -211,26 +210,26 @@ article>.phot>a>img{
     font-family: 'Rajdhani', sans-serif;
     text-align: center;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 10vmin;
     line-height: normal;
-    margin: 0%;
+    margin: auto;
 
 }
 
 .top{
-    height: 30vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
+    display: block;
+    height: auto;
 }
 
-@media screen and (max-width:480px){
-    .top-font{
-    font-size: 4rem;
-}
+@media screen and (max-width:599px){
+    /* TOPページ */
 
-.top{
-        height: 50vmin;
+/* Photo */
+article>.phot>a>img{
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 25%;
+    padding: 3px;
 }
 }
