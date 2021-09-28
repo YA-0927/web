@@ -82,6 +82,7 @@ nav>ul>li{
     border: solid;
     border-width: 1px;
     border-color:rgb(36, 36, 36);
+
 }
 
 nav>ul>li>a{
@@ -89,6 +90,7 @@ nav>ul>li>a{
     display: block;
     text-decoration: none;
     text-align: center;
+    transition: .3s ease-in-out;
 }
 
 nav>ul>li>a:hover  {
@@ -131,11 +133,11 @@ h1{
     min-width: 150px;
     max-width: 180px;
     cursor: default; /* カーソルをそのまま表示 */
+
 }
 
 .Profile{
     max-width: 100%;
-
 }
 
 h2{
@@ -191,6 +193,17 @@ footer>p{
     object-fit: cover;
     border-radius: 25%;
     padding: 3px;
+    filter: grayscale(75%);
+    transition: .2s ease-in-out;
+}
+
+.phot>a>img:hover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25%;
+    padding: 3px;
+    filter: grayscale(0%);
 }
 
 .phot{
@@ -213,13 +226,11 @@ footer>p{
     font-size: 10vmin;
     line-height: normal;
     margin: auto;
+    line-height: 35vh;
 
 }
 
-.top{
-    display: block;
-    height: auto;
-}
+
 
 @media screen and (max-width:599px){
     /* TOPページ */
